@@ -94,8 +94,12 @@ public class Product {
 		}
 	@AfterMethod
 	
-	public void down() {
+	public void down() throws InterruptedException {
+		
+		Thread.sleep(3000);
 		driver.quit();
+		
+		
 		
 	} 
 	
